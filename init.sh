@@ -69,6 +69,9 @@ case $1 in
   npc)
     addenv NPC_HOME npc
     ;;
+  archbench)
+    init OSCPU/archbench master archbench false BENCH_HOME
+    ;;
   *)
     echo "Invalid input..."
     exit
